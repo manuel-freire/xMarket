@@ -8,12 +8,13 @@ class DataSource{
     **/
     public  function __construct(){
         try{
-            $this->stringConex = "mysql:host=localhost;dbname=xmarket";
-            $this->conexion= new PDO($this->stringConex,"root","");
+            $this->stringConex = "mysql:host=" . BD_HOST . ";dbname=" . BD_NAME;
+            $this->conexion= new PDO($this->stringConex, BD_USER, BD_PASS);
         }
         catch(PDOException $e)
         {
             echo "BBDD unavariable";
+            error_log(print_r($e, FALSE));
         }
     }
 

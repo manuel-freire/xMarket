@@ -12,6 +12,7 @@ define('INSTALADA', true );
 
 define('DEFAULT_VALORATION', 0);
 define('RAIZ', __DIR__ . '/../');
+define('RAIZ_APP', RAIZ);
 
 require_once(RAIZ ."negocio/DataSource/Aplicacion.php");
 

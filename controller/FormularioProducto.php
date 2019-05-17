@@ -5,11 +5,13 @@
     require_once (RAIZ . "negocio/Transfers/subasta.php");
     require_once (RAIZ . "controller/SubastaV.php");
     require_once(RAIZ ."controller/Form.php");
+    require_once(RAIZ ."comun/Parsedown.php");
 
 class FormularioProducto extends Form
 {
     public function __construct() {
-        parent::__construct('formProducto');
+        $options = [ 'enctype' => 'multipart/form-data' ];
+        parent::__construct('formProducto', $options);
     }
     
     protected function generaCamposFormulario($datos)
