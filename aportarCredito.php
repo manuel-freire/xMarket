@@ -1,7 +1,7 @@
 <?php
     require_once __DIR__.'/controller/UsuarioV.php';
     require_once __DIR__.'/controller/FormularioCredito.php';
-    require_once __DIR__ . "/comun/Definitions.php";
+    require_once('comun/config.php');
      require_once (RAIZ . 'comun/config.php');
      $form = new FormularioCredito(); $a = $form->gestiona();
     $usuario = UsuarioV::selectUsuarioByNick($_SESSION['nombre']);

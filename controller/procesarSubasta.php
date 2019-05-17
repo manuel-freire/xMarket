@@ -1,6 +1,6 @@
 <?php 
 
-require_once($_SERVER['DOCUMENT_ROOT']. "/Aw2019/comun/Definitions.php");
+require_once('comun/config.php');
 require_once(RAIZ ."negocio/DAOs/DAOSubasta.php");
 require_once(RAIZ ."negocio/Transfers/subasta.php");
 require_once(RAIZ ."controller/SubastaV.php");

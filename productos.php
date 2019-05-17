@@ -1,7 +1,7 @@
 <?php
     require_once __DIR__ . '/controller/ProductoV.php';
     require_once __DIR__ . '/controller/ComentarioV.php';
-    require_once ("comun/Definitions.php");
+    require_once('comun/config.php');
     require_once (RAIZ . 'comun/config.php');
    //estado = 0 --> productos disponibles, estado = 1--> productos pendientes, estado = 2 mis compras, estado = 3,4,5 libros,juguetes etc
     $estado = $_GET['estado'];

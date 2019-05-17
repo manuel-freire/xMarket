@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT']. "/Aw2019/comun/Definitions.php");
+require_once('comun/config.php');
 require_once(RAIZ . 'comun/config.php');
 //Doble seguridad: unset + destroy
 unset($_SESSION["login"]);

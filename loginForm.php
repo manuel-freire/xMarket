@@ -1,5 +1,5 @@
  <?php
-     require_once __DIR__ . "/comun/Definitions.php";
+     require_once('comun/config.php');
      require_once (RAIZ . 'comun/config.php');
     require_once (RAIZ . 'controller/FormularioLogin.php');
 

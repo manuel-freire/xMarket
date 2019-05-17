@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT']. "/Aw2019/comun/Definitions.php");
+require_once('comun/config.php');
 require_once(RAIZ ."negocio/DAOs/DAOUsuario.php");
 require_once(RAIZ ."negocio/DAOs/DAOProducto.php");
 require_once(RAIZ ."negocio/DAOs/DAOComentario.php");

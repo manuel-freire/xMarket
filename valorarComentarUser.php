@@ -2,7 +2,7 @@
     require_once __DIR__.'/controller/UsuarioV.php';
     require_once __DIR__.'/controller/ProductoV.php';
     require_once __DIR__.'/negocio/Transfers/producto.php';
-    require_once ("comun/Definitions.php");
+    require_once('comun/config.php');
 
 
     $id=$_GET['id'];

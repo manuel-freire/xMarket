@@ -1,5 +1,5 @@
 <?php
-    require_once("comun/Definitions.php");
+    require_once('comun/config.php');
     require_once (RAIZ . 'controller/FormularioProducto.php');
     require_once (RAIZ . 'comun/config.php');
     $form = new FormularioProducto(); $a = $form->gestiona();

@@ -4,14 +4,15 @@ define('BD_HOST', 'localhost');
 define('BD_NAME', 'xmarket');
 define('BD_USER', 'aw');
 define('BD_PASS', 'aw');
-define('RAIZ_APP', __DIR__);
-define('RUTA_APP', '/Aw2019/');
+define('RUTA_APP', '/xMarket/');
 define('RUTA_IMGS', RUTA_APP.'img/');
 define('RUTA_CSS', RUTA_APP.'css/');
 define('RUTA_JS', RUTA_APP.'js/');
 define('INSTALADA', true );
 
-require_once($_SERVER['DOCUMENT_ROOT']. "/Aw2019/comun/Definitions.php");
+define('DEFAULT_VALORATION', 0);
+define('RAIZ', __DIR__ . '/../');
+
 require_once(RAIZ ."negocio/DataSource/Aplicacion.php");
 
 if (! INSTALADA) {
@@ -83,3 +84,5 @@ spl_autoload_register(function ($class) {
 /* */
 $app = Aplicacion::getSingleton();
 $app->init(array('host'=>BD_HOST, 'bd'=>BD_NAME, 'user'=>BD_USER, 'pass'=>BD_PASS), RUTA_APP, RAIZ_APP);
+
+session_start();

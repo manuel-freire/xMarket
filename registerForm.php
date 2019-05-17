@@ -1,6 +1,6 @@
 
 <?php
-    require_once("comun/Definitions.php");
+    require_once('comun/config.php');
     require_once (RAIZ . 'controller/FormularioRegistro.php');
     require_once (RAIZ . 'comun/config.php');
 

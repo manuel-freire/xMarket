@@ -1,9 +1,9 @@
 <?php
 
 
-require_once($_SERVER['DOCUMENT_ROOT']. "/aw2019/comun/Definitions.php");
+require_once('comun/config.php');
 require_once(RAIZ . "controller/VentaV.php");
-require_once ("comun/Definitions.php");
+require_once('comun/config.php');
 
 ?>
 
